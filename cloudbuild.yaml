@@ -4,6 +4,8 @@ steps:
 - name: 'gcr.io/$PROJECT_ID/hugo'
 - name: gcr.io/cloud-builders/gsutil
   args: ["-m", "rsync", "-r", "-c", "-d", "./public", "gs://${_HOSTNAME}"]
+- name: gcr.io/cloud-builders/gsutil
+  args: ["-m", "setmeta", "-h", "Cache-Control:no-cache", "gs://${_HOSTNAME}/**.html"]
 - name: gcr.io/cloud-builders/curl
   entrypoint: bash
   args:
