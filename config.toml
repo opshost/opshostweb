@@ -1,0 +1,100 @@
+baseurl = "https://ops.host/"
+languageCode = "fi-fi"
+title = "OpsHost"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "OpsHost"
+	description = "You Dev. We Ops. We Host."
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "OpsHost"
+
+		[params.navigation.links]
+			about     = "Meistä"
+			services  = "Palvelut"
+			portfolio = "Referenssit"
+			contact   = "Yhteys"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "You Dev. We Ops. We Host. "
+		subtitle   = "Keskity koodaamiseen!"
+		buttonText = "Ota Yhteyttä"
+
+
+	# About section
+	[params.about]
+		headline    = "Meistä"
+		description = "Pitääkö kiirettä? Keskity koodaamiseen ja jätä palvelinten konfigurointi, ylläpito, tietoturva, valvonta, reagointi 24/7, nimipalvelut, sertifikaatit ynnä muut Ops-asiat meille."
+		buttonText  = "Ota Yhteyttä"
+
+
+	# Service section
+	[params.services]
+		headline = "Palvelut"
+
+        [[params.services.list]]
+            icon = "fa-diamond"
+            title = "Sovellusalusta palveluna"
+            description = "OpsHost tuottaa sovellusalustat avaimet käteen ja kehittäjäystävällisesti"
+
+        [[params.services.list]]
+			icon = "fa-paper-plane"
+			title = "Työkalut"
+			description = "Tarjoamme kehittäjien käyttöön työkaluja, joiden avulla voidaan parantaa yhdessä tekemistä."
+
+		[[params.services.list]]
+            icon = "fa-newspaper-o"
+            title = "Palvelut"
+            description = "Valitse palvelullesi palvelutaso tarpeen mukaan. Palvelutasomme pitää sisällään valvonnan valittuna ajankohta ja reagoinnin. Vasteaika on viankorjauksen aloittamiselle on 30 minuuttia."
+
+       [[params.services.list]]
+            icon = "fa-heart"
+            title = "Edut"
+            description = "You have to make your websites with love these days!"
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Kumppanit"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+	# Contact section
+	[params.contact]
+		headline = "Ota yhteyttä"
+		description = "Jätä meille yhteystietosi vieressä olevalla lomakeella ja kerro hieman projektistasi niin asiantuntijamme ovat sinuun pian yhteydessä. Voit myös ottaa meihin suoraan yhteyttä puhelimitse ja sopia tapaamisen. "
+		phone = "02074 14880"
+		email = "yhteys@ops.host"
+
+	# Google Maps section
+	 [params.location]
+	 	latitude  = "60.204523"
+	 	longitude = "24.899739"
+	 	maps_api_key = ""
+
