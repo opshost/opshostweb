@@ -1,4 +1,4 @@
-baseurl = "https://stage.ops.host/"
+baseurl = "https://www.ops.host/"
 languageCode = "fi-fi"
 title = "OpsHost"
 theme = "hugo-creative-theme"
