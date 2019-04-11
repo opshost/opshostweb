@@ -75,7 +75,7 @@ googleAnalytics = "UA-133291864-1"
        [[params.services.list]]
             icon = "fa-heart"
             title = "Edut"
-            description = "Ulkoistettu Operations-tiimi, Ops in your DevOps"
+            description = "Ulkoistettu Operations-tiimi, Ops in your DevOps."
 
 	# Contact section
 	[params.contact]
