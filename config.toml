@@ -1,4 +1,4 @@
-baseurl = "https://ops.host/"
+baseurl = "https://stage.ops.host/"
 languageCode = "fi-fi"
 title = "OpsHost"
 theme = "hugo-creative-theme"
@@ -91,5 +91,3 @@ googleAnalytics = ""
 		description = "Voit ottaa meihin suoraan yhteyttä puhelimitse tai sähköpostilla ja sopia tapaamisen. "
 		phone = "02074 14880"
 		email = "yhteys@ops.host"
-
-
