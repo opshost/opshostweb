@@ -24,8 +24,7 @@ googleAnalytics = "UA-133291864-1"
 	description = "You Dev. We Ops. We Host."
 
 	# The path must be relative to the static folder
-	favicon = "opshost.png"
-
+	favicon = "favicon.ico"
 
 	# Navigation
 	[params.navigation]
