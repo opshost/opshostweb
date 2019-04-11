@@ -2,7 +2,7 @@ baseurl = "https://stage.ops.host/"
 languageCode = "fi-fi"
 title = "OpsHost"
 theme = "hugo-creative-theme"
-googleAnalytics = ""
+googleAnalytics = "UA-133291864-1"
 
 [params]
 
@@ -75,15 +75,7 @@ googleAnalytics = ""
        [[params.services.list]]
             icon = "fa-heart"
             title = "Edut"
-            description = "You have to make your websites with love these days!"
-
-
-    # Portfolio modals
-	[params.portfolio.modal]
-        client = "Kumppanit"
-        date = "Date"
-        category = "Category"
-        buttonText = "Close"
+            description = "Ulkoistettu Operations-tiimi, Ops in your DevOps"
 
 	# Contact section
 	[params.contact]
