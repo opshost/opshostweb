@@ -1,6 +1,6 @@
 baseurl = "https://stage.ops.host/"
 languageCode = "fi-fi"
-title = "OpsHost - Ops in your DevOps"
+title = "OpsHost"
 theme = "hugo-creative-theme"
 googleAnalytics = "UA-133291864-1"
 
