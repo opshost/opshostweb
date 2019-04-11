@@ -88,13 +88,8 @@ googleAnalytics = ""
 	# Contact section
 	[params.contact]
 		headline = "Ota yhteyttä"
-		description = "Jätä meille yhteystietosi vieressä olevalla lomakeella ja kerro hieman projektistasi niin asiantuntijamme ovat sinuun pian yhteydessä. Voit myös ottaa meihin suoraan yhteyttä puhelimitse ja sopia tapaamisen. "
+		description = "Voit ottaa meihin suoraan yhteyttä puhelimitse tai sähköpostilla ja sopia tapaamisen. "
 		phone = "02074 14880"
 		email = "yhteys@ops.host"
 
-	# Google Maps section
-	 [params.location]
-	 	latitude  = "60.204523"
-	 	longitude = "24.899739"
-	 	maps_api_key = ""
 
