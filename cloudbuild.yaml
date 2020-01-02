@@ -2,10 +2,11 @@ steps:
 - name: busybox
   args: ["mkdir", "./public"]
 - name: 'gcr.io/$PROJECT_ID/hugo'
-- name: busybox
-  args: ["ls", "-lha"]
 - name: 'gcr.io/$PROJECT_ID/wrangler'
   args: ["publish", "--env", "prod"]
+  secretEnv: ['CF_API_KEY']
+  env:
+  - 'CF_EMAIL=$_CF_EMAIL'
 - name: gcr.io/cloud-builders/curl
   entrypoint: bash
   args:
