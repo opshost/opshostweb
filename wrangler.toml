@@ -15,4 +15,4 @@ route = "stage.ops.host/*"
 
 [env.prod]
 name = "opshost-prod"
-route = "prod.ops.host/*"
+route = "www.ops.host/*"
