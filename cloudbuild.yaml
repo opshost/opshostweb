@@ -3,7 +3,7 @@ steps:
   args: ["mkdir", "./public"]
 - name: 'gcr.io/$PROJECT_ID/hugo'
 - name: 'gcr.io/$PROJECT_ID/wrangler'
-  args: ["publish", "--env", "prod"]
+  args: ["publish", "--env", "stage"]
   secretEnv: ['CF_API_KEY']
   env:
   - 'CF_EMAIL=$_CF_EMAIL'
