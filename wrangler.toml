@@ -1,0 +1,18 @@
+name = "opshost-dev"
+type = "webpack"
+account_id = "a20fbcc11870f31672f4206365e79793"
+workers_dev = false
+zone_id = "9d6b5553d14d1e9c06d4f0f467960a4f"
+route = "dev.ops.host/*"
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
+
+[env.stage]
+name = "opshost-stage"
+route = "stage.ops.host/*"
+
+[env.prod]
+name = "opshost-prod"
+route = "prod.ops.host/*"

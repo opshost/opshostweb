@@ -2,10 +2,8 @@ steps:
 - name: busybox
   args: ["mkdir", "./public"]
 - name: 'gcr.io/$PROJECT_ID/hugo'
-- name: gcr.io/cloud-builders/gsutil
-  args: ["-m", "rsync", "-r", "-c", "-d", "./public", "gs://${_HOSTNAME}"]
-- name: gcr.io/cloud-builders/gsutil
-  args: ["-m", "setmeta", "-h", "Cache-Control:no-cache, max-age=0", "gs://${_HOSTNAME}/**.html"]
+- name: 'gcr.io/$PROJECT_ID/wrangler'
+  args: ["publish", "--env", "prod"]
 - name: gcr.io/cloud-builders/curl
   entrypoint: bash
   args:
@@ -13,10 +11,6 @@ steps:
   - >
     curl --request POST --header 'X-Auth-Email: ${_CF_EMAIL}' --header "X-Auth-Key: $$CF_API_KEY" --header 'Content-Type: application/json' --data '{"purge_everything":true}' https://api.cloudflare.com/client/v4/zones/${_CF_ZONE}/purge_cache
   secretEnv: ['CF_API_KEY']
-- name: gcr.io/cloud-builders/wget
-  args: ['--spider', '-e', 'robots=off', '-r', '-l', '5', '-p', 'https://${_HOSTNAME}/']
-- name: gcr.io/cloud-builders/curl
-  args: ['--head', 'https://${_HOSTNAME}/']
 secrets:
 - kmsKeyName: projects/opshostweb-785737801/locations/global/keyRings/staticbuild/cryptoKeys/cloudflare
   secretEnv:
