@@ -3,8 +3,6 @@ steps:
   args: ["mkdir", "./public"]
 - name: 'gcr.io/$PROJECT_ID/hugo'
 - name: busybox
-  args: ["pwd"]
-- name: busybox
   args: ["ls", "-lha"]
 - name: 'gcr.io/$PROJECT_ID/wrangler'
   args: ["publish", "--env", "prod"]
