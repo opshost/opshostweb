@@ -2,6 +2,10 @@ steps:
 - name: busybox
   args: ["mkdir", "./public"]
 - name: 'gcr.io/$PROJECT_ID/hugo'
+- name: busybox
+  args: ["pwd"]
+- name: busybox
+  args: ["ls -lha"]
 - name: 'gcr.io/$PROJECT_ID/wrangler'
   args: ["publish", "--env", "prod"]
 - name: gcr.io/cloud-builders/curl
@@ -19,3 +23,7 @@ substitutions:
   _CF_EMAIL: cloudflareemail
   _CF_ZONE: cloudflarezoneid
   _HOSTNAME: hostname
+options:
+  env:
+  - LC_ALL=C.UTF-8
+  - LANG=C.UTF-8
