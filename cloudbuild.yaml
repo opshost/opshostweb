@@ -5,7 +5,7 @@ steps:
 - name: busybox
   args: ["pwd"]
 - name: busybox
-  args: ["ls -lha"]
+  args: ["ls", "-lha"]
 - name: 'gcr.io/$PROJECT_ID/wrangler'
   args: ["publish", "--env", "prod"]
 - name: gcr.io/cloud-builders/curl
